@@ -32,7 +32,7 @@
 %define rpmrel		0.rc%{relc}.1
 %define tar_ver   	%{kernelversion}.%{patchlevel}-rc%{relc}
 %else
-%define rpmrel		1
+%define rpmrel		99
 %define tar_ver		%{kernelversion}.%{patchlevel}
 %endif
 %define buildrpmrel	%{rpmrel}%{rpmtag}
@@ -422,6 +422,7 @@ Patch810:	linux-5.4.5-fix-build.patch
 Patch811:	https://lore.kernel.org/lkml/CAMe9rOrtj-Hrr6tmSrwg_V9bawXXB2WjsSedL=aCaaH-=ZSKsA@mail.gmail.com/2-0001-x86-Don-t-declare-__force_order-in-kaslr_64.c.patch
 Patch812:	linux-5.5-corsair-strafe-quirks.patch
 Patch813:	cpupower-gcc10.patch
+Patch999:	PDS-linux-5.5.5.patch
 
 # Defines for the things that are needed for all the kernels
 #
